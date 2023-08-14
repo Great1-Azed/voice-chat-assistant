@@ -1,0 +1,271 @@
+{%extends 'baseindex.html'%}
+{%block csrfToken%}  <script>
+    const csrfToken = '{{ csrf_token }}';
+</script>
+{%endblock%}
+
+{%load static%}
+{%block content%}
+
+	<style>
+		.box {
+			background-color: rgb(190, 190, 190);
+            opacity: 0.5;
+			display: flex;
+            position: fixed;
+            top: 30px;
+			bottom: 80px;
+			left: 50px;
+			right: 50px;
+            z-index: 100;
+			align-items: center;
+			justify-content: center;
+		}
+		p {
+			font-size: 17px;
+			align-items: center;
+		}
+		.box-close {
+			display: inline-block;
+			background-color: #fff;
+			padding: 15px;
+			border-radius: 3px;
+		}	
+		.content {
+			position: absolute;
+			background: white;
+			width: 400px;
+			padding: 1em 2em;
+			border-radius: 4px;
+		}
+		.modal:target {
+			visibility: visible;
+			opacity: 1;
+		}
+		.box-close {
+			position: absolute;
+			top: 0;
+			right: 15px;
+			color: #fe0606;
+			text-decoration: none;
+			font-size: 30px;
+            cursor: pointer;
+		}
+        #welcome {
+            display: none;
+        }
+	</style>
+
+	<div class="box" id="myBox">
+        <p
+        class="box-close" id="box-close">
+            ×
+    </p>
+    <div class="recorder">
+        <div class="display">
+       </div>
+
+        <div class="controllers">
+
+        </div>
+    </div>
+    <p id="welcome">Welcome home </p>
+	</div>
+	
+
+
+
+
+
+    
+  
+  
+  
+<section class="home_banner_area">
+    <div class="banner_inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner_content text-center">
+              <p class="text-uppercase">
+                Best online education service In the world
+              </p>
+              <h2 class="text-uppercase mt-4 mb-5">
+                One Step Ahead This Season
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="feature_area section_gap_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Our Offers</h2>
+            <p>
+              Unlock Your Potential and attain greater heights with us 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><span class="flaticon-student"></span></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">Scholarship Facility</h4>
+              <p>
+                Merit-based scholarships are often awarded to students 
+                who exhibit exceptional academic prowess.Students should aspire to excel 
+                academically, knowing that their efforts could be 
+                recognized and rewarded through scholarships. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><span class="flaticon-book"></span></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">Sell Online Course</h4>
+              <p>
+                Share your passion, expertise, and knowledge to empower 
+                others. As you embark on this journey, remember that every enrolled 
+                student represents an opportunity to make a positive impact. 
+                So, take the leap, create your course, and inspire. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><span class="flaticon-earth"></span></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">Global Certification</h4>
+              <p>
+                Elevate Your Credentials to a Worldwide Standard. Stand Out 
+                in Your Field, Increase Opportunities, and Showcase Your 
+                Expertise on a Global Stage. Your Passport to 
+                Professional Success!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End Feature Area =================-->
+
+  <!--================ Start Trainers Area =================-->
+  <section class="trainer_area section_gap_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Our Expert Trainers</h2>
+            <p>
+              Unleash Your Potential with Guidance from Our Expert 
+              Trainers Masters of Mentorship
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center d-flex align-items-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>Mated Nithan</h4>
+            <p class="designation">Sr. web designer</p>
+            <div class="mb-4">
+              <p>
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t2.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>David Cameron</h4>
+            <p class="designation">Sr. web designer</p>
+            <div class="mb-4">
+              <p>
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>Jain Redmel</h4>
+            <p class="designation">Sr. Faculty Data Science</p>
+            <div class="mb-4">
+              <p>
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>Nathan Macken</h4>
+            <p class="designation">Sr. web designer</p>
+            <div class="mb-4">
+              <p>
+                If you are looking at blank cassettes on the web, you may be
+                very confused at the.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="#"><i class="ti-facebook"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-linkedin"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script  defer src="{% static 'js/vrecorder.js'%}"></script>
+
+  {% endblock %}

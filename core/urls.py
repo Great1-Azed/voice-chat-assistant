@@ -4,7 +4,10 @@ from core import views
 
 
 urlpatterns = [
-    path('',views.index),
+    path('',views.index, name="index"),
     path('google',views.google),
+    path('upload-audio', views.processAudio, name="processAudio"),
+    path('about_us',views.aboutUS, name= "about-us"),
+    path('contact_us',views.contactUS, name= "contact_us")
     
 ]

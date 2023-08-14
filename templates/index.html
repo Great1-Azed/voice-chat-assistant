@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%block csrfToken%}  <script>
+    const csrfToken = '{{ csrf_token }}';
+</script>
+{%endblock%}
+
+{%load static%}
+{%block content%}
+<main>
+<div class="popup">
+    <div class="recorder">
+        <div class="display">
+       </div>
+
+        <div class="controllers">
+
+        </div>
+    </div>
+</div>
+    
+    <div id="root"></div>
+</main>
+
+<p class="welcome" id="welcome">Welcome to ABC website. I am your Voice Assistance to help you navigate the website.
+
+</p>
+
+<script  defer src="{% static 'js/vrecorder.js'%}"></script>
+
+{%endblock%}
