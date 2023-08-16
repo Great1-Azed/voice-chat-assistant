@@ -1,5 +1,6 @@
 {%extends 'baseindex.html'%}
-{%block csrfToken%}  <script>
+{%block csrfToken%}
+  <script>
     const csrfToken = '{{ csrf_token }}';
 </script>
 {%endblock%}
@@ -29,7 +30,7 @@
 			display: inline-block;
 			background-color: #fff;
 			padding: 15px;
-			border-radius: 3px;
+			/* border-radius: 3px; */
 		}	
 		.content {
 			position: absolute;
@@ -38,10 +39,10 @@
 			padding: 1em 2em;
 			border-radius: 4px;
 		}
-		.modal:target {
+		/* .modal:target { 
 			visibility: visible;
 			opacity: 1;
-		}
+		/* } */
 		.box-close {
 			position: absolute;
 			top: 0;
@@ -71,15 +72,8 @@
     </div>
     <p id="welcome">Welcome home </p>
 	</div>
-	
-
-
-
-
-
-    
-  
-  
+	  
+   
   
 <section class="home_banner_area">
     <div class="banner_inner">
@@ -159,9 +153,7 @@
       </div>
     </div>
   </section>
-  <!--================ End Feature Area =================-->
 
-  <!--================ Start Trainers Area =================-->
   <section class="trainer_area section_gap_top">
     <div class="container">
       <div class="row justify-content-center">
@@ -178,7 +170,7 @@
       <div class="row justify-content-center d-flex align-items-center">
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
+            <img class="img-fluid" src="{% static '../assets1/trainer/t1.jpg' %} " alt="" />
           </div>
           <div class="meta-text text-sm-center">
             <h4>Mated Nithan</h4>
@@ -200,7 +192,7 @@
 
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t2.jpg" alt="" />
+            <img class="img-fluid" src="{% static '../assets1/trainer/t2.jpg' %} alt=" />
           </div>
           <div class="meta-text text-sm-center">
             <h4>David Cameron</h4>
@@ -222,7 +214,7 @@
 
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
+            <img class="img-fluid" src="{% static '../assets1/trainer/t3.jpg' %}" alt="" />
           </div>
           <div class="meta-text text-sm-center">
             <h4>Jain Redmel</h4>
@@ -244,7 +236,7 @@
 
         <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
           <div class="thumb d-flex justify-content-sm-center">
-            <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
+            <img class="img-fluid" src="{% static '../assets1/img/trainer/t4.jp' %}" alt="" />
           </div>
           <div class="meta-text text-sm-center">
             <h4>Nathan Macken</h4>

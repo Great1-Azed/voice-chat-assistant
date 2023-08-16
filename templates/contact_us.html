@@ -1,12 +1,89 @@
-{%extends 'base.html'%}
-{%load static%}
-{%block content%}
-<h2>Contact Us</h2>
-<p  id="contact_us"> we are automation development agencies, specialized in building bot, AI chatbot.
-    Implementing coding and no coding tools which we sever to the end users.
-</p>
-<script src= "{%static 'js/main.js'%}"> </script>
-<script defer>
-    voicePage("contact_us")
-</script>
-{%endblock%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%extends 'baseindex.html'%}
+    {%load static%}
+    {%block content%}
+
+    <link rel="icon" href=" {% static 'img/favicon.png'%}" type="image/png" />
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}" />
+    <!-- main css -->
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}" />
+</head>
+
+<body>
+
+    <main id="contact_us">
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="banner_content text-center">
+                                <h2>Contact Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+
+        <!--================Contact Area =================-->
+        <section class="contact_area section_gap">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="ti-home"></i>
+                                <h6>California, United States</h6>
+                                <p>Santa monica bullevard</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="ti-headphone"></i>
+                                <h6><a href="#">+234 (90) 115 162</a></h6>
+                                <p>Mon to Fri 9am to 6 pm</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="ti-email"></i>
+                                <h6><a href="#">.cosupport</a></h6>
+                                <p>Send us a mail anytime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+
+
+    <script src="{%static 'js/main.js'%}"> </script>
+    <script defer>
+        voicePage("contact_us")
+    </script>
+    {%endblock%}
+
+</body>
+
+</html>

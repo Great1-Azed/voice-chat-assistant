@@ -164,7 +164,6 @@ const sendAudioToServer = async (blob) => {
   }
 };
 
-// Function to send audio data to the server
 // const sendAudioToServer = (blob) => {
 //     const formData = new FormData();
 //     formData.append('audio', blob, 'recording.flac');
