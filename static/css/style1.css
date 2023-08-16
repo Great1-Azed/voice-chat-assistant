@@ -1,6 +1,30 @@
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500|Rubik:500, 600");
-
+.popupPage {
+  height: 100em;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #38a4ff;
+  z-index: 100;
+}
+.screenButton {
+  /* width: 84.3rem; */
+  /* height: 80vh; */
+  margin: auto;
+  text-align: top;
+  z-index: -10;
+  position: absolute;
+  top: 10em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: inherit;
+  /* background-color: #c850c0; */
+}
 body {
   line-height: 25px;
   font-size: 16px;
@@ -65,6 +89,7 @@ button:focus {
 
 .title-bg {
   background: #002347; }
+  
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -495,7 +520,6 @@ button:focus {
 ============================================================================================ */
 .popular_courses {
   padding-bottom: 100px; }
-  
   @media (max-width: 991px) {
     .popular_courses {
       padding-bottom: 40px; } }
