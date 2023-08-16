@@ -81,6 +81,8 @@ def aboutUS(request):
 
 def contactUS(request):
    return render(request,'contact_us.html')
+def blogPost(request):
+   return render(request,'blog.html')
 
 def google(request):
     audio =request.POST.get("audio")
